@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "MotoyaExReisyo W6";
+  src: url("https://db.onlinewebfonts.com/t/2791fbb71aaa2340ec139f3c3cc41ba2.eot");
+  src: url("https://db.onlinewebfonts.com/t/2791fbb71aaa2340ec139f3c3cc41ba2.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/2791fbb71aaa2340ec139f3c3cc41ba2.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/2791fbb71aaa2340ec139f3c3cc41ba2.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/2791fbb71aaa2340ec139f3c3cc41ba2.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/2791fbb71aaa2340ec139f3c3cc41ba2.svg#MotoyaExReisyo W6")format("svg");
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v18-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root{
+
+  /* FONTS */
+  --hd-sm: 1rem;
+  --hd-med: 2rem;
+  --hd-Lg: 3rem;
+  --btn--pad: .5rem 1rem;
+
+  /* COLORS */
+  --cl-0: #ffffff;
+  --cl-1: #fed562;
+  --cl-1-2: #bda35c;
+  --cl-2: #e62339;
+
+  /* BOX SHADOW */
+  --bs-1:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  --bs-2: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1{
+  font-size: var(--hd-Lg);
+}
+
+p{
+  line-height: 1.7;
+}
