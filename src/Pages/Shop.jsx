@@ -1,14 +1,59 @@
 import { Helmet } from "react-helmet"
 import Layout from "../Components/Navbar/Layout"
-Helmet
+import "./styles/Shop.css"
+import { Link } from "react-router-dom"
+import shop from "../../JSON FILES/shop.js"
+import { useState } from "react"
+useState
+Link
+
 export default function Shop() {
+
+  const [items, setItems] = useState(shop)
+  
+
   return(
    <div>
     <Helmet>
       <title>Shop</title>
     </Helmet>
+
      <Layout>
-      <h1>Shop</h1>
+      <div className="shop__con">
+
+        <section className="shop__side">
+          <ul className="shop__selection">
+           <li>
+           <h2>CATEGORIES</h2>
+           </li>
+            <li>
+              <Link>ALL</Link>
+            </li>
+            <li>
+              <Link>NOODLES</Link>
+            </li>
+            <li>
+              <Link>DRINKS</Link>
+            </li>
+            <li>
+              <Link>TOPPINGS</Link>
+            </li>
+          </ul>
+        </section>
+
+        <div className="shop__items">
+          {items.map((item) => (
+           <div className="items__container" key={item.id}>
+              <img src={item.image} alt={item.name} className="item__image"/>
+
+              <h3>{item.name}</h3>
+              <h4>₱{item.price}</h4>
+              <button className="cart__add">ADD TO CART</button>
+           </div>
+          ))}
+        </div>
+
+      </div>
     </Layout>
    </div>
   )

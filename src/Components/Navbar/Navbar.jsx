@@ -44,7 +44,12 @@ export default function Navbar() {
 
       <div className="nav__right">
         <button className="btn__login">LOGIN</button>
-        <FaShoppingCart className="cart__icon"/>
+
+        <FaShoppingCart 
+          className="cart__icon"
+         
+        />
+
         <GiHamburgerMenu 
           className={isMenuOpen? "openMenu nav__menu" : "closeMenu nav__menu"} 
           onClick={openMenu}

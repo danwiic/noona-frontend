@@ -1,17 +1,18 @@
-section{
+.landing__section{
   padding: 20px;
   transition: 1s ease;
-  height: 800px;
+  height: auto;
   display: block;
-
   @media(width <= 500px){
     transition: 1s ease;
   }
 }
 
-img{
-  max-width: 100%;
-  height: auto;
+.landing__image{
+  object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
   border-radius: 12px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -26,13 +27,22 @@ img{
   .con{
     grid-template-columns: repeat(1, 1fr);
   }
-  .item:nth-child(1) > img{
+  .item:nth-child(1) > .landing__image{
     width: 100%;
-    height: 270px;
+    height: 300px;
+   object-fit: cover;
+    
   }
-  .item:nth-child(3) > img{
+  .item:nth-child(3) > .landing__image{
     height: auto;
     max-width: 100%;
+    object-fit: fill;
+  }
+}
+
+@media(width <= 900px){
+  .con{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -40,20 +50,20 @@ img{
   font-size: .9rem;
 }
 
-.item > img{
+.item > .landing__image{
   width: 100%;
   height: auto;
   max-height: 500px;
 }
 
-.item:nth-child(3) > img,
-.item:nth-child(4) > img,
-.item:nth-child(5) > img{
+.item:nth-child(3) > .landing__image,
+.item:nth-child(4) > .landing__image,
+.item:nth-child(5) > .landing__image{
   height: 220px;
   max-width: 100%;
 }
 
-.nga1{
+.landing__header{
   font-size: 1.5rem;
   word-spacing: .2ch;
 }
@@ -72,7 +82,31 @@ button{
   color: white;
 }
 
-p{
+.landing__description{
   word-spacing: .3ch;
   padding: 10px;
+  opacity: .8;
 }
+
+@media (width >= 1280px){
+  .item > .landing__image{
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .item:nth-child(3) > .landing__image,
+  .item:nth-child(4) > .landing__image,
+  .item:nth-child(5) > .landing__image{
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+} 
+
+
+
+
+
