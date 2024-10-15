@@ -1,6 +1,8 @@
 import { Helmet } from "react-helmet"
 import "./styles/About.css"
+Map
 import Layout from "../Components/Navbar/Layout"
+import Map from "../Components/Map/Map"
 Helmet
 export default function About() {
   return(
@@ -74,8 +76,6 @@ export default function About() {
           </div>
          </section>
        
-        
-      
         </div>
       </Layout>
     </div>

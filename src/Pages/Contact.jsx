@@ -1,10 +1,17 @@
 import { Helmet } from "react-helmet";
 import Layout from "../Components/Navbar/Layout";
 import "./styles/Contact.css"
+import Map from "../Components/Map/Map";
+Map
 Helmet
 Layout
 
 export default function Contact() {
+
+  function submitForm(e){
+    e.preventDefault()
+  }
+
   return(
     <div>
       <Helmet>
@@ -57,7 +64,7 @@ export default function Contact() {
 
               <div className="contact">
                 <h2>SEND US A MESSAGE</h2>
-                  <form className="contact__form">
+                  <form className="contact__form" onSubmit={submitForm}>
                 
                     <label>First Name*
                       <input type="text" placeholder="Enter first name..." required/>
@@ -83,6 +90,9 @@ export default function Contact() {
                   </form>
               </div>
 
+              <div className="map__container">
+                <Map/>
+              </div>
           </section>
           
          
