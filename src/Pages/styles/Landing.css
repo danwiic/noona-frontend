@@ -79,7 +79,10 @@ button{
   cursor: pointer;
   border-radius: 12px;
   font-weight: 600;
-  color: white;
+  a{
+    color: white;
+    font-family: inherit;
+  }
 }
 
 .landing__description{
