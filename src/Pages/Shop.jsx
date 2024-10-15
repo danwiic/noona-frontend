@@ -60,12 +60,12 @@ export default function Shop() {
         </section>
 
         <div className="shop__items">
-          {items.map((item) => (
-           <div className="items__container" key={item.id}>
+          {items.map((item, index) => (
+           <div className="items__container" key={index}>
               <img src={item.image} alt={item.name} className="item__image"/>
 
-              <h3>{item.name}</h3>
-              <h4>₱{item.price}</h4>
+              <h3 className="item__name">{item.name}</h3>
+              <h4 className="item__price">₱{item.price}</h4>
               <button className="cart__add">ADD TO CART</button>
            </div>
           ))}

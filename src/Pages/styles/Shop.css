@@ -73,6 +73,14 @@
         font-size: .8rem;
       }
     }
+
+    .item__name{
+      margin-bottom: 10px;
+    }
+
+    .item__price{
+      margin-bottom: 20px;
+    }
     
     .item__image{
       width: 100%;
