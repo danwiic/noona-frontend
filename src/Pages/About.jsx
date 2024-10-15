@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet"
+import "./styles/About.css"
 import Layout from "../Components/Navbar/Layout"
 Helmet
 export default function About() {
@@ -9,7 +10,13 @@ export default function About() {
       </Helmet>
 
       <Layout>
-        <h1>ABOUT</h1>
+        <div className="about__container">
+
+          <div className="image__grid">
+            <img src="main.jpeg" alt="" className="about__image" />
+          </div>
+asda
+        </div>
       </Layout>
     </div>
   )
