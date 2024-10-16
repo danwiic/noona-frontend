@@ -72,13 +72,14 @@
   grid-column: 1 / -1;
 }
 
-button{
+.btn__landing{
   all: unset;
   background-color: var(--cl-2);
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 12px;
   font-weight: 600;
+  color: white;
   a{
     color: white;
     font-family: inherit;

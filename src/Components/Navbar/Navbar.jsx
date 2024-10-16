@@ -43,7 +43,7 @@ export default function Navbar() {
       ))}
 
       <div className="nav__right">
-        <button className="btn__login">LOGIN</button>
+        <button className="btn__login" ><Link to="/login">LOGIN</Link></button>
 
         <FaShoppingCart 
           className="cart__icon"

@@ -103,8 +103,12 @@ button{
   background-color: var(--cl-1);
   border-radius: .5rem;
   box-shadow: var(--bs-2);
-  color: var(--cl-0);
   font-weight: 700;
+
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .btn__login:hover{

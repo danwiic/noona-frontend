@@ -77,10 +77,17 @@
       color: white;
       cursor: pointer;
       font-size: 1rem;
+      background-color: var(--cl-2);
+      padding: 10px 20px;
+      font-weight: 700;
+      border-radius: 4px;
 
       @media(width <= 550px){
         font-size: .8rem;
       }
+    }
+    .cart__add:hover{
+      background: rgb(178, 37, 37);
     }
 
     .item__name{

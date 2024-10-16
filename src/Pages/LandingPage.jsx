@@ -39,7 +39,7 @@ export default function LandingPage() {
             <div className="item" data-aos="fade-left">
               <h1 className="landing__header">Choose from our selection of noodles and toppings</h1>
               <p className="landing__description">Each is bursting with authentic taste and texture. Whether you prefer your ramyeon spicy, savory, or somewhere in between, the power is in your hands to create a bowl that satisfies your cravings.</p>
-              <button><Link to="/shop">LEARN MORE</Link></button>
+              <button className="btn__landing"><Link to="/shop">LEARN MORE</Link></button>
             </div>
 
             <div className="item" data-aos="fade-up">
