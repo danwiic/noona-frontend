@@ -75,14 +75,7 @@
            border-radius: 4px;
            outline: none;
            border: none;
-           border-right: 1px solid transparent;
-           border-bottom: 2px solid transparent; 
            border: 1px solid grey;
-         }
-         input:focus{ 
-           border-right: 1px solid grey;
-           border-bottom: 2px solid grey; 
-           transition: .5s ease;
          }
  
          button{

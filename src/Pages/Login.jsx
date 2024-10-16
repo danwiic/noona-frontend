@@ -21,6 +21,7 @@ export default function Login() {
                   <h2>LOGIN</h2>
 
                 <form className="login__form" onSubmit={(e) => {e.preventDefault}}>
+                  
                   <input type="text" placeholder="Username" name="username" />
                   <input type="text" placeholder="Password" name="password" />
                   <Link>Forgot Password?</Link>

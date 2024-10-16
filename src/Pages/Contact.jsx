@@ -86,7 +86,7 @@ export default function Contact() {
                       <textarea  placeholder="Type your message here...." type="text" className="message"required/>
                     </label>
                     
-                    <button>SUBMIT</button>
+                    <button className="btn__contact">SUBMIT</button>
                   </form>
               </div>
 
